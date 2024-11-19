@@ -3,7 +3,6 @@ package com.kass.backendtodo.services;
 
 import com.kass.backendtodo.models.StatusModel;
 import com.kass.backendtodo.repositories.IStatus;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
