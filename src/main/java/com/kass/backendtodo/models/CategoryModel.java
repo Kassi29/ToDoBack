@@ -1,6 +1,7 @@
 package com.kass.backendtodo.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
@@ -31,6 +32,7 @@ public class CategoryModel {
 
 
     @Nullable
+    @JsonIgnoreProperties
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parentId")
     private CategoryModel parent;
